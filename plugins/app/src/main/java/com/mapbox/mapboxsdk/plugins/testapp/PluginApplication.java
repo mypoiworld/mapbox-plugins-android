@@ -7,6 +7,8 @@ import com.squareup.leakcanary.LeakCanary;
 
 import timber.log.Timber;
 
+import timber.log.Timber;
+
 public class PluginApplication extends Application {
 
   @Override
@@ -20,6 +22,7 @@ public class PluginApplication extends Application {
     LeakCanary.install(this);
     initializeLogger();
     Mapbox.getInstance(this, getString(R.string.mapbox_access_token));
+    Timber.plant(new Timber.DebugTree());
   }
 
   private void initializeLogger() {
