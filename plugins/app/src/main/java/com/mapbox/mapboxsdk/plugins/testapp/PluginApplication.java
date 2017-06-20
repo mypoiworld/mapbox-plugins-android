@@ -5,6 +5,8 @@ import android.app.Application;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.squareup.leakcanary.LeakCanary;
 
+import timber.log.Timber;
+
 public class PluginApplication extends Application {
 
   @Override
@@ -15,6 +17,11 @@ public class PluginApplication extends Application {
       // You should not init your app in this process.
       return;
     }
+
+    if (BuildConfig.DEBUG) {
+      Timber.plant(new Timber.DebugTree());
+    }
+
     LeakCanary.install(this);
     Mapbox.getInstance(this, getString(R.string.mapbox_access_token));
   }
