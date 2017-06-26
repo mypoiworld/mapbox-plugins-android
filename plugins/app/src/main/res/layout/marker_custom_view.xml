@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="48dp"
+                android:layout_height="48dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/ic_car"
+            android:tint="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/holo_blue_dark"
+            android:src="@drawable/ic_car"
+            android:tint="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/ic_car"
+            android:tint="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/ic_car"
+            android:tint="@android:color/white"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Vroom! Vroom! Vroom! Vroom! Vroom!"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

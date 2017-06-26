@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
 
-    <com.google.maps.android.ui.RotationLayout
+    <com.mapbox.mapboxsdk.plugins.icongenerator.RotationLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -19,6 +19,6 @@
             android:paddingRight="10dp"
             android:paddingTop="5dp"/>
 
-    </com.google.maps.android.ui.RotationLayout>
+    </com.mapbox.mapboxsdk.plugins.icongenerator.RotationLayout>
 
 </LinearLayout>
