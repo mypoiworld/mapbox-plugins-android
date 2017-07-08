@@ -7,8 +7,6 @@ import com.squareup.leakcanary.LeakCanary;
 
 import timber.log.Timber;
 
-import timber.log.Timber;
-
 public class PluginApplication extends Application {
 
   @Override

@@ -33,13 +33,13 @@ public class BuildingActivity extends AppCompatActivity implements OnMapReadyCal
   @BindView(R.id.fabBuilding)
   View fab;
 
-  @BindView(R.id.seekbar_light_radialCoordinate)
+  @BindView(R.id.seekbarLightRadialCoordinate)
   SeekBar seekbarRadialCoordinate;
 
-  @BindView(R.id.seekbar_light_azimuthalAngle)
+  @BindView(R.id.seekbarLightAzimuthalAngle)
   SeekBar seekbarAzimuthalAngle;
 
-  @BindView(R.id.seekbar_light_polarAngle)
+  @BindView(R.id.seekbarLightPolarAngle)
   SeekBar seekbarPolarAngle;
 
   private MapboxMap mapboxMap;
@@ -64,7 +64,7 @@ public class BuildingActivity extends AppCompatActivity implements OnMapReadyCal
   }
 
   private void initLightSeekbar() {
-    seekbarRadialCoordinate.setMax(24); // unkown?
+    seekbarRadialCoordinate.setMax(24); // unknown?
     seekbarAzimuthalAngle.setMax(180); // unknown?
     seekbarPolarAngle.setMax(180); // polar angle ranges from 0 to 180 degrees
 

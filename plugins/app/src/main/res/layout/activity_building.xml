@@ -40,17 +40,17 @@
         android:padding="4dp">
 
         <SeekBar
-            android:id="@+id/seekbar_light_radialCoordinate"
+            android:id="@+id/seekbarLightRadialCoordinate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <SeekBar
-            android:id="@+id/seekbar_light_azimuthalAngle"
+            android:id="@+id/seekbarLightAzimuthalAngle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <SeekBar
-            android:id="@+id/seekbar_light_polarAngle"
+            android:id="@+id/seekbarLightPolarAngle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
