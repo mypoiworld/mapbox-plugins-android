@@ -74,7 +74,6 @@ public final class BuildingPlugin {
     light = mapboxMap.getLight();
     fillExtrusionLayer = new FillExtrusionLayer(LAYER_ID, "composite");
     fillExtrusionLayer.setSourceLayer("building");
-//    fillExtrusionLayer.setFilter(eq("extrude", "true"));
     fillExtrusionLayer.setMinZoom(minZoomLevel);
     fillExtrusionLayer.setProperties(
       visibility(visible ? Property.VISIBLE : Property.NONE),
@@ -86,7 +85,6 @@ public final class BuildingPlugin {
           Stop.stop(16f, 0f, fillExtrusionHeight(0f)),
           Stop.stop(16f, 1000f, fillExtrusionHeight(1000f))
         ))),
-//      fillExtrusionBase(Function.property("min_height", new IdentityStops<Float>())),
       fillExtrusionOpacity(opacity)
     );
     mapboxMap.addLayer(fillExtrusionLayer);
