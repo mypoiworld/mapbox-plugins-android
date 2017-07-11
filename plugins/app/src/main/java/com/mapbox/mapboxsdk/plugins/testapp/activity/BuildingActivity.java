@@ -58,8 +58,9 @@ public class BuildingActivity extends AppCompatActivity implements OnMapReadyCal
   @Override
   public void onMapReady(MapboxMap mapboxMap) {
     this.mapboxMap = mapboxMap;
-    this.buildingPlugin = new BuildingPlugin(mapView, mapboxMap);
-    this.fab.setVisibility(View.VISIBLE);
+    buildingPlugin = new BuildingPlugin(mapView, mapboxMap);
+    buildingPlugin.setMinZoomLevel(15);
+    fab.setVisibility(View.VISIBLE);
     initLightSeekbar();
   }
 
