@@ -92,12 +92,12 @@ public class BuildingActivity extends AppCompatActivity implements OnMapReadyCal
 
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {
-
+      // Only listening to positionChange for onProgress.
     }
 
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
-
+      // Only listening to positionChange for onProgress.
     }
   }
 
